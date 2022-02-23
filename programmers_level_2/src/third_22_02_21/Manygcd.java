@@ -1,7 +1,5 @@
 package third_22_02_21;
 
-import java.util.*;
-
 public class Manygcd {
 
 

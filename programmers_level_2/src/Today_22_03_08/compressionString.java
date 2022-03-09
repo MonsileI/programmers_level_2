@@ -9,7 +9,7 @@ public class compressionString {
 		String s = "aabbcccc";
 		
 		int answer = Integer.MAX_VALUE;
-		
+		System.out.println(answer);
 		if(s.length()==1) answer = 1;
 		
 		for(int i=1;i<=s.length()/2;i++) {

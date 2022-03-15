@@ -26,10 +26,10 @@ public class photo {
 		
 		for(int i=0;i<friends.length;i++) {
 			if(!isVisited[i]) {
-				isVisited[i]=false;
+				isVisited[i]=true;
 				String name = names + friends[i];
 				dfs(name,data,isVisited);
-				isVisited[i] = true;
+				isVisited[i] =false;
 			}
 		}
 		

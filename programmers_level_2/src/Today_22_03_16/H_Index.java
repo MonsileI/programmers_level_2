@@ -9,7 +9,7 @@ public class H_Index {
 	
 	public static void main(String[] args) {
 		
-		int[]citations = {0,1,2};
+		int[]citations = {3,0,6,1,5};
 		
 		int answer = citations.length;
 		

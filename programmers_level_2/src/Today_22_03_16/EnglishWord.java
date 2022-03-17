@@ -36,9 +36,7 @@ public class EnglishWord {
 				round++;
 			}
 		}
-		
-		System.out.println(set.size());s
-		System.out.println(words.length);
+	
 		if(set.size()==words.length) {
 			answer[0]= 0;
 			answer[1]= 0;

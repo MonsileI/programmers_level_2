@@ -8,28 +8,27 @@ public class biggestNumber {
 	
 		String number = "1231234";
 		int k =3;
-		
 		int idx = 0;
-		
 		StringBuilder sb = new StringBuilder();
 		
 		for(int i=0;i<number.length()-k;i++) {
 			
 			int comp = 0;
-			for(int j=0;j<=i+k;j++) {
+			
+			for(int j=idx;j<=k+i;j++) {
 				
 				if(comp<number.charAt(j)-'0') {
-					comp =number.charAt(j)- '0';
+					comp = number.charAt(j)-'0';
 					idx = j+1;
 				}
 				
 			}
-			
 			sb.append(comp);
+			
 		}
 		
-		System.out.println(sb.toString());
 		
+		System.out.println(sb.toString());
 	}
 	
 	

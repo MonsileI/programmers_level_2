@@ -35,12 +35,12 @@ public class dunjeons {
 		
 		if(depth==dungeons.length) {
 			
-			System.out.println(k);
+			
 			
 		}
 		
 		for(int i=0;i<dungeons.length;i++) {
-			k = 80;
+			
 			if(!visit[i]) {
 				visit[i] = true;
 				k = k-dungeons[i][1];

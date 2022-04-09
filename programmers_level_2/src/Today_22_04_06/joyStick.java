@@ -8,25 +8,27 @@ public class joyStick {
 		String name = "JEROEN";
 		int answer = 0;
 		
-		
 		int LR = name.length()-1;
-		
 		
 		for(int i=0;i<name.length();i++) {
 			
 			char ch = name.charAt(i);
 			
-			answer += Math.min(Math.abs(ch-'A'), Math.abs('Z'-ch));
+			answer += Math.min(ch-'A',26 - (ch-'A'));
 			
-			int idx = i+1;
+			int idxA = 0+i;
 			
-			while(idx<LR&&name.charAt(idx)=='A') idx++;
+			while(idxA<name.length()&&name.charAt(idxA)=='A') {
+				
+				idxA++;
+				
+			}
 			
-			LR = Math.min(LR, (i*2)+name.length()-idx);
+			LR = Math.min(LR, (i*2) + name.length()-idxA);
+			
 		}
 		
-		
 		System.out.println(answer+LR);
-		
+	
 	}
 }

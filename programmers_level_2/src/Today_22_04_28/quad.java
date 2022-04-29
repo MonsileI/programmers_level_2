@@ -17,7 +17,6 @@ public class quad {
 		
 		if(check(x,y,size,arr)) {
 			answer[arr[x][y]]++;
-			System.out.println(arr[x][y]);
 			return;
 		}
 		
